@@ -1,0 +1,126 @@
+/*******************  Basic  ************************/
+*
+	box-sizing: border-box
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+
+body
+	font: $font-style
+	line-height: 2
+	background-color: #f2f2f2
+	color: #666
+
+body.gray
+	background: #383838
+a 	
+	text-decoration: none
+	color: $link-font-color
+	&:hover
+		color: $linkhover-font-color
+	&:hover,&:active
+		outline: 0
+		text-decoration: none
+
+a,button 
+	@include transition(transform 0.2s all 0.2s, 0s ease)
+
+h1, h2, h3, h4, h5, h6 
+	color: #444
+	font-weight: 600
+	margin: 0 0 1em 0
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a 
+	color: inherit
+	text-decoration: none
+	line-height: 24px
+
+h1 
+	font-size: 32px
+
+h2 
+	font-size: 28px
+
+h3 
+	font-size: 24px
+	margin: 50px 0 0
+
+h4 
+	font-size: 20px
+	margin: 0
+
+
+.pc-hidden-mobile-show
+	display: none
+
+
+/*******************  Custom scrollbar  ************************/
+
+::-webkit-scrollbar
+	width: 10px
+	height: 10px
+
+::-webkit-scrollbar-button
+	width: 0
+	height: 0
+
+::-webkit-scrollbar-thumb
+	background: #C5C4C4
+	border: 0px none #fff
+	border-radius: 60px
+
+::-webkit-scrollbar-thumb:hover
+	background: #B4B4B4
+
+::-webkit-scrollbar-track
+	background: #ededed
+	border: 0px none #fff
+	border-radius: 0
+
+::-webkit-scrollbar-corner
+
+
+
+/*******************  Gotop  ************************/
+#gotop
+	background: url(#{$bg}gototop.png)
+	display: none
+	position: fixed
+	right: 15px
+	bottom: 42px
+	padding: 24px
+	cursor: pointer
+	z-index: 999
+
+
+
+
+/*******************  Button  ************************/
+input[type="submit"], input[type="reset"], input[type="button"], .button,button
+	-moz-appearance: none
+	-webkit-appearance: none
+	-ms-appearance: none
+	appearance: none
+	@include transition(background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out)
+	background-color: transparent
+	border-radius: 0.35em
+	border: solid 1px #dcdada
+	color: #dcdada !important
+	cursor: pointer
+	display: inline-block
+	font-weight: 400
+	height: 3.15em
+	height: calc(2.75em + 6px)
+	line-height: 2.75em
+	min-width: 10em
+	padding: 0 1.5em
+	text-align: center
+	text-decoration: none
+	white-space: nowrap
+
+input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover, .button:hover,button:hover
+	border-color: $main-color
+	color: $main-color !important
+
+input[type="submit"]:active, input[type="reset"]:active, input[type="button"]:active, .button:active,button:hover
+	border-color: $main-color
+	color: $main-color !important

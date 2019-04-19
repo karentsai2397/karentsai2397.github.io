@@ -1,0 +1,8 @@
+
+.icon-monitor:before { content: '\e800'; } /* '' */
+.icon-mobile:before { content: '\e801'; } /* '' */
+.icon-left-open:before { content: '\e802'; } /* '' */
+.icon-right-open:before { content: '\e803'; } /* '' */
+.icon-cancel:before { content: '\e804'; } /* '' */
+.icon-apple:before { content: '\e805'; } /* '' */
+.icon-android:before { content: '\e806'; } /* '' */

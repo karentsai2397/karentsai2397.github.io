@@ -1,0 +1,483 @@
+@import compass/reset
+@import _varible.sass 
+@import _layout.sass
+@import _grid.scss 
+@import _fonts.scss 
+
+
+/*************************************  Home  ****************************************/
+section
+	margin-bottom: 80px
+	h2
+		border-bottom: 1px solid #ddd
+	h3
+		color: $main-color
+.gray section h2
+	color: #fff
+	border-bottom: none
+strong
+	font-weight: bold
+
+/*******************  Header  ************************/
+header
+	background-color: #fff
+	background-attachment: scroll, fixed
+	background-position: top left, top left
+	background-repeat: repeat, no-repeat
+	background-size: auto, auto 100%
+	color: rgba(255, 255, 255, 0.5)
+	top: 0
+	left: 0
+	padding: 50px 40px
+	position: fixed
+	text-align: right
+	width: 280px
+	height: 100%
+	text-align: center
+	margin: 0
+	h1
+		font-size: 22px
+		text-align: center
+		font-weight: bold
+		color: $main-color
+	.image.avatar 
+		margin-bottom: -11px
+
+.tags	
+	ul
+		display: none
+	&:before
+		content: ""
+		display: block
+		width: 48px
+		height: 2px
+		background: #e7e7e7
+		margin: 40px 0
+	li
+		display: inline-block
+		font-size: 14px
+		max-width: 100px
+		padding: 0 5px
+		background: #efeeee
+		color: #a0a0a0
+		+border-radius(3px)	
+#about-me
+	.tags 
+		&:before,&:after
+			content: ""
+			display: block
+			width: 48px
+			height: 2px
+			background: #e7e7e7
+			margin: 20px 0 50px
+
+nav .tags ul
+	display: block
+
+nav.on a:hover
+	color: #fff
+	background: #e2c099
+
+/*******************  content  ************************/
+.container
+	margin-left: 280px
+
+.content-block
+	width: 1200px
+	max-width: 86%
+	margin: 40px auto 50px
+
+.circle-block
+	vertical-align: top
+	padding-top: 60px
+
+/*******************  Navigation  ************************/
+nav
+	text-align: left
+	ul
+		margin: 0
+		padding: 0
+		list-style: none
+	li
+		font-size: 18px
+		position: relative
+		color: #444
+		a
+			display: block
+			padding: 2px 0
+			color: #444
+			text-decoration: none
+			border: none
+		&.current a
+			color: $link-font-color
+
+/****** Mobile Menu ******/
+.menu-toggle
+	width: 30px
+	height: 30px
+	position: absolute
+	top: 7px
+	right: 17px
+	cursor: pointer
+	display: none
+	&.on
+		.one 
+			@include transform(rotate(45deg) translate(7px, 7px))
+		.two
+			opacity: 0
+		.three
+			@include transform (rotate(-45deg) translate(7px, -7px))
+
+.navbar-fixed-top 
+	.on
+		.one,.three
+			background: $main-color
+
+.one,.two,.three
+	width: 100%
+	height: 4px
+	background: $main-color
+	margin: 6px auto
+	backface-visibility: hidden
+	@include transition-duration(0.3s)
+	+border-radius(2px)
+
+
+/*******************  footer  ************************/
+footer
+	bottom: 0
+	left: 0
+	position: fixed
+	text-align: left
+	margin: 1em 0 0 0
+	.icons
+		margin: 0
+		padding-left: 40px
+		a
+			color: #333
+		li
+			display: inline-block
+			vertical-align: bottom
+.fb-like
+	top: -4px
+
+a.lab
+	vertical-align: text-top
+	padding-right: 5px
+	color: #fff
+	border-bottom: 1px dotted #fff
+	&:hover
+		color: $linkhover-font-color
+		border-bottom: 1px dotted $linkhover-font-color
+
+.copyright
+	color: rgba(#444, 0.6)
+	font-size: 14px
+	list-style: none
+	padding-left: 40px
+	li
+		line-height: 1.6
+		padding-left: 0
+		&:first-child
+			border-left: 0
+			margin-left: 0
+			padding-left: 0
+		a
+			color: inherit
+
+
+/*******************  Skill Diagram  ************************/
+/* Import the Google Font 'Lato' */
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700)
+
+.outer 
+	fill: transparent
+	stroke: #333
+	stroke-width: 19.8
+	stroke-dasharray: 534
+	transition: stroke-dashoffset 1s
+	-webkit-animation-play-state: running
+	/* firefox bug fix - won't rotate at 90deg angles */
+	-moz-transform: rotate(-89deg) translateX(-190px)
+
+/* full circle 25 empty 534 */
+.inner 
+	fill: transparent
+	stroke: orange
+	stroke-width: 20
+	stroke-dasharray: 534
+	transition: stroke-dashoffset 1s
+	-webkit-animation-play-state: running
+	/* firefox bug fix - won't rotate at 90deg angles */
+	-moz-transform: rotate(-89deg) translateX(-190px)
+	stroke-dashoffset: 0
+
+.circliful 
+	overflow: visible !important
+	margin-bottom: -30px
+
+.timer
+	display: none
+
+.svg-container 
+	width: 100%
+	margin: -41px auto -15px
+	overflow: visible
+
+svg .icon 
+	font-family: 'icomoon'
+
+ul
+	list-style: circle
+	margin: 0 0 2em 0
+	padding-left: 1em
+	li 
+		padding-left: 0.5em
+
+.list li
+	color: #777
+	padding: 5px 0
+
+
+/******************* project Item  ************************/
+.project-item
+	display: block
+	position: relative
+	width: 100%
+	top: 0
+	overflow: hidden
+	z-index: 9
+	+transition(.3s)
+	margin: 0 0 10px
+	padding: 0 4px
+	&:before
+		position: absolute
+		top: 10px
+		bottom: 10px
+		left: 10px
+		right: 10px
+		bottom: 100%
+		content: ''
+		background-color: rgba(#333, 0.6)
+		+transition(all 0.25s ease)
+	img
+		z-index: 8
+		opacity: 1
+		+transition(.3s)
+	.text 
+		opacity: 0
+		position: absolute
+		top: 0
+		bottom: 0
+		left: 0
+		right: 0
+		z-index: 1
+		align-items: center
+		display: flex
+		flex-direction: column
+		justify-content: center
+		h2, span
+			text-decoration: none!important
+		h2
+			font-size: 18px
+			color: #fff
+			margin: 0
+		span 
+			color: lighten(#fff, 70%)
+			font-size: 12px
+			font-weight: 400
+	&:hover, &:focus
+		+box-shadow(7px 14px 42px 3px rgba(0, 0, 0, 0.4))
+		text-decoration: none
+		top: -10px
+		h2, span
+			text-decoration: none!important
+	&:hover:before
+		bottom: 10px
+		-webkit-transition-delay: 0s
+		transition-delay: 0s
+	&:hover .text
+		opacity: 1
+
+.img-responsive
+	width: 100%
+	display: block
+	max-width: 100%
+	height: auto
+
+.content
+	display: none
+	h2
+		margin-bottom: 0
+	p
+		margin: 0
+		&:nth-child(2)
+			margin-bottom: 15px
+	a
+		color: #7E7E7E
+	.row
+		margin: 40px 0 60px
+
+.cover
+	height: 195px
+	overflow: hidden
+	img
+		width: 100%
+
+.circle
+	+circle(100px)
+	+border-radius(50%)
+	float: right
+	border: 0.2rem solid #404040
+	text-align: center
+	margin-right: 3%
+	transition-duration: .6s
+	transition-delay: .3s
+	display: inline-block
+	padding: 10px
+	font-size: 10px
+	i
+		font-size: 35px
+		color: #717071
+		position: relative
+		display: block
+		margin-bottom: 7px
+		top: 5px
+	p
+		margin-top: -2px
+
+.icon-rwd
+	background: url(../images/rwd-symbol.svg) no-repeat
+	background-size: 100%
+	width: 40px
+	height: 32px
+	display: block
+	margin: 11px auto 4px
+
+.icon-monitor,.icon-mobile,.icon-apple,.icon-android
+	color: #7E7E7E
+	padding-right: 2px
+
+/******************* About Me  ************************/
+#about-me
+	text-align: justify
+	ol 
+		padding-left: 17px
+	li
+		list-style: decimal
+.col-md-6
+	vertical-align: top
+h2
+	p
+		font-size: 16px
+		color: #717171
+
+.block
+	background: #e0e0e0
+	padding: 8px 20px 20px
+	margin: 20px 0
+	span
+		font-size: 40px
+
+.work,.edu
+	margin-top: 30px
+	li
+		position: relative
+		&:before
+			content: ""
+			width: 7px
+			height: 7px
+			border: 3px solid #3b9a9f
+			background: #fcfcfc
+			+border-radius(50%)
+			position: absolute
+			left: -19px
+			top: 10px
+			z-index: 9
+		&:after
+			content: ""
+			position: absolute
+			width: 2px
+			height: 100%
+			left: -13px
+			top: 0
+			background: #3b9a9f
+			z-index: 1
+		small
+			font-size: 14px
+			color: #9e9e9e
+		span
+			font-weight: bold
+
+.info-block
+	position: relative
+	left: 50%
+	z-index: 9
+	background: #fff
+	padding: 30px
+	width: 290px
+	+box-shadow(7px 7px 42px 3px rgba(0, 0, 0, .3))
+
+.visible-xs
+	display: none
+
+/******************* Contact  ************************/
+/* Form */
+form 
+	input,textarea
+		margin: 8px 0
+
+label 
+	color: #787878
+	display: block
+	font-size: 0.9em
+	font-weight: 400
+	margin: 0 0 1em 0
+
+input[type="text"], input[type="password"], input[type="email"], select, textarea
+	-moz-appearance: none
+	-webkit-appearance: none
+	-ms-appearance: none
+	appearance: none
+	background: #f7f7f7
+	border: 1px solid #eaeaea
+	+border-radius(0.35em)
+	color: inherit
+	display: block
+	outline: 0
+	padding: 0 0.75em
+	text-decoration: none
+	width: 100%
+
+input[type="text"]:invalid, input[type="password"]:invalid, input[type="email"]:invalid, select:invalid, textarea:invalid
+	box-shadow: none
+
+input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, select:focus, textarea:focus
+	border: 2px solid $main-color
+
+
+input[type="text"], input[type="password"], input[type="email"], select 
+	height: 2.75em
+
+textarea 
+	padding: 0.75em
+
+
+::-webkit-input-placeholder
+	color: #b2b2b2 !important
+	opacity: 1.0
+
+
+::-moz-placeholder 
+	color: #b2b2b2 !important
+	opacity: 1.0
+
+
+::-ms-input-placeholder 
+	color: #b2b2b2 !important
+	opacity: 1.0
+
+.formerize-placeholder 
+	color: #b2b2b2 !important
+	opacity: 1.0
+

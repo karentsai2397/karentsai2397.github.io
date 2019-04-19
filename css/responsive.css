@@ -1,0 +1,291 @@
+/* Medium */
+@media screen and (max-width: 1100px) {
+  .content {
+    margin: 0;
+    width: 100%;
+  }
+
+  .info-block {
+    left: 0;
+    margin-top: 55%;
+  }
+
+  .svg-container {
+    margin: -15px auto;
+  }
+
+  #about-me .col-md-9 {
+    float: right;
+  }
+}
+@media screen and (max-width: 980px) {
+  body {
+    background-size: cover;
+  }
+
+  /* Basic */
+  h1 br,
+  h2 br,
+  h3 br,
+  h4 br,
+  h5 br,
+  h6 br {
+    display: none;
+  }
+
+  /* List */
+  ul.icons li .icon {
+    font-size: 1.25em;
+  }
+
+  /* Header */
+  header {
+    background-attachment: scroll;
+    background-position: top left, center center;
+    background-size: auto, cover;
+    left: auto;
+    padding: 6em 4em;
+    position: relative;
+    text-align: center;
+    top: auto;
+    width: 100%;
+  }
+
+  header h1 {
+    font-size: 1.75em;
+  }
+
+  header h1 br {
+    display: inline;
+  }
+
+  /* Footer */
+  footer {
+    background-attachment: scroll;
+    background-color: #1f1815;
+    background-position: top left, bottom center;
+    background-repeat: repeat, no-repeat;
+    background-size: auto, cover;
+    bottom: auto;
+    left: auto;
+    padding: 4em 4em 6em 4em;
+    position: relative;
+    text-align: center;
+    width: 100%;
+  }
+
+  footer .icons {
+    margin: 0 0 1em 0;
+  }
+
+  footer .copyright {
+    margin: 0;
+    padding-left: 0;
+    color: #dadada;
+  }
+
+  footer .copyright li {
+    border-left-width: 1px;
+    display: inline-block;
+    line-height: 1em;
+    margin-left: 0.75em;
+    padding-left: 0.75em;
+  }
+
+  /*menu*/
+  nav {
+    display: none;
+    float: none;
+    position: fixed;
+    top: 60px;
+    width: 100%;
+    left: 0;
+    background: #BF996E;
+    z-index: 99;
+  }
+  nav ul {
+    margin: 0 auto 20px;
+    text-align: center;
+  }
+  nav .tags {
+    display: none;
+  }
+
+  .tags ul {
+    display: block;
+  }
+
+  nav.on {
+    display: block;
+  }
+
+  header.on {
+    background: #BF996E;
+    position: fixed;
+    z-index: 99;
+    top: 0;
+  }
+  header.on .one, header.on .two, header.on .three {
+    background: #fff;
+    z-index: 999;
+  }
+
+  .navbar-fixed-top .on .one, .navbar-fixed-top .on .two, .navbar-fixed-top .on .three {
+    background: #fff;
+    z-index: 999;
+  }
+
+  .tags:before {
+    margin: 20px auto;
+  }
+
+  .menu-toggle {
+    display: inline-block;
+    color: #FFF;
+    position: fixed;
+    top: 0.8em;
+    right: 0.8em;
+    border-radius: 4px;
+    z-index: 99;
+  }
+
+  nav li {
+    float: none;
+    display: block;
+    padding-left: 0;
+  }
+
+  nav li a {
+    padding: 10px 15px;
+    border-bottom: none;
+    text-align: center;
+  }
+
+  .content .row {
+    margin: 40px 0;
+  }
+
+  .cover {
+    height: auto;
+  }
+
+  .circle {
+    width: 98px;
+    height: 98px;
+    margin-right: -3px;
+  }
+
+  .content .col-md-4 {
+    padding: 0 10px;
+  }
+
+  .circle-block {
+    padding-top: 0;
+  }
+}
+/* Small */
+@media screen and (max-width: 780px) {
+  body {
+    background-size: cover;
+    background-position: left;
+    overflow-x: hidden;
+  }
+
+  .container {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  /* Basic */
+  h1 {
+    font-size: 1.5em;
+  }
+
+  h3 {
+    font-size: 1.3em;
+    font-weight: normal;
+  }
+
+  /* Header */
+  header {
+    padding: 2.25em 1.5em;
+  }
+
+  header h1 {
+    font-size: 18px;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  header .image.avatar {
+    margin: 0 0 1em;
+    width: 9.25em;
+  }
+
+  .tags {
+    margin-top: 36px;
+  }
+
+  /* Footer */
+  footer {
+    padding: 2.25em 1.5em;
+  }
+
+  .svg-container {
+    width: 140%;
+    margin: -26px auto -15px;
+  }
+
+  .block {
+    margin-bottom: 40px;
+  }
+
+  .info-block {
+    left: -3%;
+    margin-top: 12%;
+  }
+}
+/* XSmall */
+@media screen and (max-width: 480px) {
+  /* Header */
+  header {
+    padding: 4.5em 1.5em 3em;
+  }
+
+  header h1 br {
+    display: none;
+  }
+
+  /* Footer */
+  footer .copyright li {
+    border-left-width: 0;
+    display: block;
+    line-height: 2.25em;
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  .circle {
+    margin-right: -17px;
+    float: left;
+    margin-left: 9px;
+  }
+
+  .hidden-xs {
+    display: none;
+  }
+
+  .visible-xs {
+    display: block;
+  }
+
+  .circliful {
+    width: 96px;
+  }
+
+  .content .row {
+    margin: 20px 0;
+  }
+}
+
+/*# sourceMappingURL=responsive.css.map */

@@ -1,0 +1,319 @@
+@import url("font-awesome.min.css");
+@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic");
+@media screen and (max-width: 1300px) {
+    .container {
+        width: 960px;
+    }
+    #header {
+        padding: 2em 4em 0 0;
+    }
+    #header h1 {
+        margin-left: calc(100% - 80%);
+    }
+    #footer {
+        padding: 0 4em 0em 0;
+    }
+}
+
+
+/* Medium */
+
+@media screen and (max-width: 980px) {
+    /* Basic */
+    h1 br,
+    h2 br,
+    h3 br,
+    h4 br,
+    h5 br,
+    h6 br {
+        display: none;
+    }
+    /* List */
+    ul.icons li .icon {
+        font-size: 1.25em;
+    }
+    /* Header */
+    #header {
+        background-attachment: scroll;
+        background-position: top left, center center;
+        background-size: auto, cover;
+        left: auto;
+        padding: 6em 4em;
+        position: relative;
+        text-align: center;
+        top: auto;
+        width: 100%;
+    }
+    #header h1 {
+        font-size: 1.75em;
+    }
+    #header h1 br {
+        display: inline;
+    }
+    /* Footer */
+    #footer {
+        background-attachment: scroll;
+        background-color: #1f1815;
+        background-image: url("images/overlay.png"), url("../../images/bg.jpg");
+        background-position: top left, bottom center;
+        background-repeat: repeat, no-repeat;
+        background-size: auto, cover;
+        bottom: auto;
+        left: auto;
+        padding: 4em 4em 6em 4em;
+        position: relative;
+        text-align: center;
+        width: 100%;
+    }
+    #footer .icons {
+        margin: 0 0 1em 0;
+    }
+    #footer .copyright {
+        margin: 0 0 1em 0;
+    }
+    #footer .copyright li {
+        border-left-width: 1px;
+        display: inline-block;
+        line-height: 1em;
+        margin-left: 0.75em;
+        padding-left: 0.75em;
+    }
+    /*menu*/
+    .menu {
+        display: none;
+    }
+    .menu.active {
+        display: block;
+    }
+    .toggle {
+        display: inline-block;
+        padding: 10px 10px 5px;
+        color: #FFF;
+        position: fixed;
+        top: 0.8em;
+        right: 0.8em;
+        background: rgba(0, 0, 0, .5);
+        border-radius: 10px;
+        z-index: 99;
+    }
+    nav {
+        float: none;
+        position: fixed;
+        top: 3.3em;
+        width: 100%;
+        left: 0;
+        background: rgba(0, 0, 0, .8);
+        z-index: 9;
+    }
+    .menu li {
+        float: none;
+        display: block;
+    }
+    .menu li a {
+        padding: 10px 15px;
+        border-bottom: none;
+    }
+    .menu li:hover ul {
+        position: relative;
+        display: block;
+        background: transparent;
+    }
+    .menu li:hover ul li {
+        background: transparent;
+    }
+    .menu li:hover ul li a {
+        padding-left: 30px;
+    }
+    .arrow-bottom {
+        top: 20px;
+    }
+    /* Main */
+    #main {
+        margin: 0;
+        padding: 6em 4em;
+        width: 100%;
+    }
+    .col-3 {
+        width: 50%;
+    }
+}
+
+
+/* Small */
+
+@media screen and (max-width: 736px) {
+    .col-2,
+    .col-3,
+    .col-4,
+    .col-5,
+    .col-6 {
+        width: 100%;
+    }
+    /* Basic */
+    h1 {
+        font-size: 1.5em;
+    }
+    h2 {
+        font-size: 1.2em;
+    }
+    h3 {
+        font-size: 1em;
+    }
+    /* Section/Article */
+    section.special,
+    article.special {
+        text-align: center;
+    }
+    header.major h2 {
+        font-size: 1.35em;
+    }
+    /* List */
+    ul.labeled-icons li {
+        padding-left: 2em;
+    }
+    ul.labeled-icons li h3 {
+        line-height: 1.75em;
+    }
+    /* Header */
+    #header {
+        padding: 2.25em 1.5em;
+    }
+    #header h1 {
+        font-size: 0.8em;
+        margin-left: 0;
+    }
+    /* Footer */
+    #footer {
+        padding: 2.25em 1.5em;
+    }
+    /* Main */
+    #main {
+        padding: 2.25em 1.5em 0.25em 1.5em;
+    }
+    #main > section {
+        margin: 2.25em 0 0 0;
+        padding: 2.25em 0 0 0;
+    }
+    /* Poptrox */
+    .poptrox-popup {
+        border-radius: 0;
+    }
+    .poptrox-popup .nav-next:before,
+    .poptrox-popup .nav-previous:before {
+        margin-top: -1em;
+    }
+}
+
+
+/* XSmall */
+
+@media screen and (max-width: 480px) {
+    .container {
+        width: 100%;
+    }
+    .row > * {
+        padding: 0 0 0 1.5em;
+    }
+    .row {
+        margin: 0 0 -1px -1.5em;
+    }
+    .row.uniform > * {
+        padding: 1.5em 0 0 1.5em;
+    }
+    .row.uniform {
+        margin: -1.5em 0 -1px -1.5em;
+    }
+    .col-2 {
+        width: 50%;
+    }
+    /*menu*/
+    .menu {
+        display: none;
+    }
+    .menu.active {
+        display: block;
+    }
+    .toggle {
+        display: inline-block;
+        padding: 10px 10px 5px;
+        color: #FFF;
+        position: fixed;
+        top: 0.8em;
+        right: 0.8em;
+        background: rgba(0, 0, 0, .5);
+        border-radius: 10px;
+        z-index: 99;
+    }
+    nav {
+        float: none;
+        position: fixed;
+        top: 3.3em;
+        width: 100%;
+        left: 0;
+        background: rgba(0, 0, 0, .8);
+        z-index: 9;
+    }
+    .menu li {
+        float: none;
+        display: block;
+    }
+    .menu li a {
+        padding: 10px 15px;
+        border-bottom: none;
+    }
+    .menu li:hover ul {
+        position: relative;
+        display: block;
+        background: transparent;
+    }
+    .menu li:hover ul li {
+        background: transparent;
+    }
+    .menu li:hover ul li a {
+        padding-left: 30px;
+    }
+    .arrow-bottom {
+        top: 20px;
+    }
+    /* List */
+    ul.actions {
+        margin: 0 0 2em 0;
+    }
+    ul.actions li {
+        display: block;
+        padding: 1em 0 0 0;
+        text-align: center;
+        width: 100%;
+    }
+    ul.actions li:first-child {
+        padding-top: 0;
+    }
+    ul.actions li > * {
+        margin: 0 !important;
+        width: 100%;
+    }
+    ul.actions li > *.icon:before {
+        margin-left: -2em;
+    }
+    ul.actions.small li {
+        padding: 0.5em 0 0 0;
+    }
+    ul.actions.small li:first-child {
+        padding-top: 0;
+    }
+    /* Header */
+    #header {
+        padding: 4.5em 1.5em;
+    }
+    #header h1 br {
+        display: none;
+    }
+    /* Footer */
+    #footer .copyright li {
+        border-left-width: 0;
+        display: block;
+        line-height: 2.25em;
+        margin-left: 0;
+        padding-left: 0;
+    }
+}
