@@ -97,6 +97,9 @@
         .tags{
             display: none;
         }
+        li.current a{
+            color: #fff;
+        }
     }
     .tags ul{
             display: block;
@@ -143,6 +146,9 @@
         padding: 10px 15px;
         border-bottom: none;
         text-align: center
+    }
+    nav li.current a {
+        color: #fff;
     }
     .content .row{
         margin: 40px 0
@@ -226,7 +232,7 @@
 
     /* Header */
     header {
-        padding: 4.5em 1.5em 3em;
+        padding: 4em 1.5em 2.5em;
     }
     header h1 br {
         display: none;
@@ -240,7 +246,7 @@
         padding-left: 0;
     }
     .circle{
-        margin-right: -17px;
+        margin-right: -3px;
         float: left;
         margin-left: 9px;
     }
@@ -257,5 +263,11 @@
         margin: 20px 0
     }
     
+}
+
+@media screen and (max-width: 375px) {
+    .circle{
+        margin-right: -8px;
+    }
 }
 
