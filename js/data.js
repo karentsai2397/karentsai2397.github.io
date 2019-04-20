@@ -14,7 +14,24 @@ var data={
             img_thumbs: "xinmi.jpg",
             img_default: "xinmi-banner",
             demo: ["xinmi.jpg"]
-        },{
+        },
+        {
+
+            year: 2018,
+            name: "夏普中國官網",
+            subname: "Sharp of China",
+            url: "http://demoweb.byethost10.com/sharp",
+            url_text: "sharp.com",
+            description: "夏普中國官網，負責網頁HTML。",
+            rwd: true,
+            development: true,
+            design: false,
+            designtype: "Design",
+            img_thumbs: "sharp.jpg",
+            img_default: "sharp-banner",
+            demo: ["sharp.jpg"]
+        },
+        {
 
             year: 2017,
             name: "DFMS System",
