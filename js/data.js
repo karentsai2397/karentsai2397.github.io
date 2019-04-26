@@ -4,7 +4,7 @@ var data={
             year: 2019,
             name: "心蜜 Xinmi",
             subname: "Xinmi",
-            url: "http://demoweb.byethost10.com/xinmi/tw/index.html",
+            url: "http://demoweb.byethost10.com/xinmi",
             url_text: "Xinmi.com",
             description: "心蜜陪一顆心長大。負責網頁視覺設計與前端開發",
             rwd: true,
@@ -13,7 +13,7 @@ var data={
             designtype: "Design",
             img_thumbs: "xinmi.jpg",
             img_default: "xinmi-banner",
-            demo: ["xinmi.jpg"]
+            demo: []
         },
         {
 
